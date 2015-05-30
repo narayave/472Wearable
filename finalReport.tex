@@ -1,0 +1,67 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{anysize}
+\usepackage{indentfirst}
+\usepackage{sectsty}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{chngpage}
+\usepackage{enumerate}
+\hypersetup{
+	colorlinks=true, 
+	linkcolor=blue, 
+	urlcolor=blue, 
+	pdfnewwindow=true, 
+	citecolor=black
+}
+\urlstyle{same}
+\linespread{1.2}
+
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+
+\begin{document}
+
+\begin{titlepage}
+    \vspace*{4cm}
+    \begin{flushright}
+    {\huge
+        Quad Control\\[5mm]
+    }
+    {\large
+        CS 472 | Spring 2015
+     }
+    \end{flushright}
+\hrule
+    \begin{flushright}
+	Audrey Sullivan\\
+	Vedanth Narayanan\\
+    \vfill
+	\today\\
+    \end{flushright}
+\end{titlepage}
+
+\raggedright
+
+\section*{Introduction}
+
+\section*{Concept Design}
+
+\section*{Specifications}
+\subsection*{Assumptions}
+\subsection*{Pros and Cons}
+Battery consumption?
+Wearable has a small battery, so charge it more often.
+
+
+\section*{Conclusion}
+
+\newpage
+\nocite{*}
+\bibliographystyle{annotate}
+\bibliography{bibfile}
+
+\end{document}
