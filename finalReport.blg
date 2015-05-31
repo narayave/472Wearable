@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: finalReport.aux
 The style file: annotate.bst
 Database file #1: bib.bib
-You've used 1 entry,
+Warning--to sort, need author or key in quadroid
+You've used 2 entries,
             2588 wiz_defined-function locations,
-            573 strings with 4819 characters,
-and the built_in function-call counts, 696 in all, are:
-= -- 74
-> -- 31
+            575 strings with 4835 characters,
+and the built_in function-call counts, 899 in all, are:
+= -- 92
+> -- 32
 < -- 1
 + -- 12
 - -- 12
-* -- 49
-:= -- 110
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 8
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 28
-empty$ -- 47
+* -- 59
+:= -- 131
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 2
+cite$ -- 4
+duplicate$ -- 38
+empty$ -- 75
 format.name$ -- 13
-if$ -- 151
+if$ -- 199
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 1
-newline$ -- 8
+newline$ -- 11
 num.names$ -- 3
-pop$ -- 7
+pop$ -- 17
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 14
 quote$ -- 0
-skip$ -- 28
+skip$ -- 39
 stack$ -- 0
-substring$ -- 47
-swap$ -- 12
+substring$ -- 55
+swap$ -- 13
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 0
+type$ -- 16
+warning$ -- 1
 while$ -- 6
-width$ -- 2
-write$ -- 19
+width$ -- 4
+write$ -- 27
+(There was 1 warning)
