@@ -83,9 +83,7 @@
 \subsection*{Prototype}
 \hspace{1cm}Granted, the design we propose may look simple, however it did not come about this way without purpose or thought. The general design idea was primarily dependent on the items we wanted to place the device. Clearly, having a huge processor and the biggest batteries and sensors was not going to help with having a sleek wearable design.\\
 \hspace{1cm}We were initially looking into having a little processor like the new Intel Curie or something from the AMD Cortex M series, but remembered from ECE 375 that we don't always need a processor. More often than not a microcontroller will and can do our bidding, and a processor will only hike the device price. Thus, we went on to look for microcontroller that would suffice our needs. We found the "Adafruit GEMMA v2" microcontroller that was circular in shape, and we decided to model the design around that.\\
-We then continued to look for track pads and batteries that would go along with the microcontroller that we had chosen. Very soon, we found out about NailO, an MIT research project, which was on a similar path to the one we were following. We realized that we could use the touch sensors that they were using for our device. Once again on the Adafruit website we found a battery that could be used. Once we had what we thought we might need, we decided to approach one of our Mechanical Engineering friends, Caleb Schmidt, to discuss whether building a device like this would even be possible and mock up a design on Solidworks for us.\\
-Talking to Caleb was really useful for us because he gave us a general sense of the thickness of our device, if we were to place all the materials we had gathered in there. After much debate, he helped us come with a design that could potentially work, if we could change a couple of different materials inside. We ended up finding "Bluetooth LE (BLE) Beetle Wearable Microcontroller." We thought this would a better option because the shape was more of a rectangle, Bluetooth was included, and it was wireless programming capable. The drawback was that it needed 5V power, but we were only able to supply 3.7V. We decided to look into Samsung's new wearable batteries. More specifically they had thin curved battery cells that we wanted to use. Originally, the idea was to place them in the wrist strap and save space on top. Instead, a better was to elevate the middle of the device into a peak, and place the batteries under the track pad sensors. While we had thought about being able to pop the top of the device off to connect the microcontroller and program it, with the new microcontroller we could wirelessly program it.\\
-Once we settled on a design that we thought would work, Caleb modeled it for us. Refer to Figure 1 to get an idea of what it looks like.
+\hspace{1cm}We then continued to look for track pads and batteries that would go along with the microcontroller that we had chosen. Very soon, we found out about NailO, an MIT research project, which was on a similar path to the one we were following. We realized that we could use the touch sensors that they were using for our device. Once again on the Adafruit website we found a battery that could be used. Once we had what we thought we might need, we decided to approach one of our Mechanical Engineering friends, Caleb Schmidt, to discuss whether building a device like this would even be possible and mock up a design on Solidworks for us.\\
 
 \begin{figure}
 	\centering
@@ -97,16 +95,60 @@ Once we settled on a design that we thought would work, Caleb modeled it for us.
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{CaptureV4.png}
+		\includegraphics[width=1\linewidth]{CaptureV5.png}
 		%\caption{A subfigure}
 		\label{fig:sub2}
 	\end{subfigure}
-	\caption{A figure with two subfigures}
+	\caption{The overall design of the Quad Control wearable device.}
+	\label{fig:test}
+\end{figure}
+
+
+\hspace{1cm}Talking to Caleb was really useful for us because he gave us a general sense of the thickness of our device, if we were to place all the materials we had gathered in there. After much debate, he helped us come with a design that could potentially work, if we could change a couple of different materials inside. We ended up finding "Bluetooth LE (BLE) Beetle Wearable Microcontroller." We thought this would a better option because the shape was more of a rectangle, Bluetooth was included, and it was wireless programming capable. The drawback was that it needed 5V power, but we were only able to supply 3.7V. We decided to look into Samsung's new wearable batteries. More specifically they had thin curved battery cells that we wanted to use. Originally, the idea was to place them in the wrist strap and save space on top. Instead, a better was to elevate the middle of the device into a peak, and place the batteries under the track pad sensors. While we had thought about being able to pop the top of the device off to connect the microcontroller and program it, with the new microcontroller we could wirelessly program it. The design is quite simple because we want the user to not have any problem controller their copter. Often, you see huge remote controllers that have a variety of knobs and buttons, and the user needs a tutorial before they can fly it. Our device is simple and allows the user to do exactly what they want to.\\
+Once we had everything in place, Caleb modeled it for us. Refer to Figure 1 to get an idea of what it looks like.
+
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{CaptureV2.png}
+		%\caption{A subfigure}
+		\label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{CaptureV3.png}
+		%\caption{A subfigure}
+		\label{fig:sub2}
+	\end{subfigure}
+	\caption{The device from different angles.}
 	\label{fig:test}
 \end{figure}
 
 \section*{Specifications}
+
 \subsection*{Pros and Cons}
+
+\paragraph{Pros}
+\begin{itemize}
+	\item Sleek designed device that is easy to carry.
+	\item Simple design, so the user is not confused.
+	\item If modifications are made in the future, then more capability can be added.
+	\item Bringing James Bond style to real life.
+	\item Unlike other wearables, this will not always be on.
+	\item Battery capacity is 210 mAh, so they will be able to last for a long amounts of time.
+	\item Microcontroller can be wirelessly programmed.
+\end{itemize}
+
+\paragraph{Cons}
+\begin{itemize}
+	\item Quadcopters already have controllers with them, and this is just another device that needs to be carried around.
+	\item Microcontroller requires 5V of battery, but we essentially have 7.6V.
+	\item If user has a smart watch, then this is just something else they need to wear.
+	\item User needs to own a smartphone to use this.
+\end{itemize}
+
 Battery consumption?
 Wearable has a small battery, so charge it more often.
 \subsection*{Costs}
