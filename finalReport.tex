@@ -5,6 +5,8 @@
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{chngpage}
 \usepackage{enumerate}
 \hypersetup{
@@ -47,14 +49,15 @@
 \raggedright
 
 \section*{Introduction}
-In an age where we can monitor our cats from our smart watches and tweet automatically when we pull on our pajamas, it was a challenge to come up with a new wearable that serves a new purpose. Wearables can’t be mentioned without smart watches coming into the picture. Although smart watches are quite new, we see that they are already capable of accomplishing a lot of different tasks.\\
+\hspace{1cm}In an age where we can monitor our cats from our smart watches and tweet automatically when we pull on our pajamas, it was a challenge to come up with a new wearable that serves a new purpose. Wearables can't be mentioned without smartwatches coming into the picture. Although smartwatches are quite new, we see that they are already capable of accomplishing a lot of different tasks.\\
+\hspace{1cm}There were a variety of wearable ideas that we sifted through, including anklets for activity tracking, wearables that would detect body temperature and modify the room temperature, and perhaps even a wearable for cold-blooded pets. Despite being interesting ideas, they seemed a bit "stale." We wanted something that could carry on to the future. Naturally we started to consider other new tech devices that our wearable could connect to. One idea that immediately popped into our minds was air drones or quadcopters. One can by a quadcopter on amazon for less than \$50.00. As these are becoming a little more relevant in our daily lives, perhaps an innovative wearable would be to be able to control the quadcopter. It is this idea that we took to heart.
 
 \section*{Concept Design}
-We propose an original wearable device that has sterring capabilities to control a quadcopter. It would be very convenient to be able to direct a droid with a wristband-like device, with vertical and horizontal directing controls. This device would simplify control functionality and be a great alternative to large handheld controllers.\\
-Our design utilizes an obtuse isosceles triangular shape that allows you to control with your thumb and index fingers, representing the X-Y, and Z planes. Where the top face represents X-Y and the bottom lower face acts as a Z (forward and backward) plane. You can essentially use two wide sides of a triangle with the obtuse angle on top to control different directions at the same time while the third face is attached to a wristband.\\
-We plan to keep all of the essential power and microcontroller housed inside of the pyramid-like structure. The main components of our device include two batteries, a microcontroller, and a sensor.\\
-Our idea is to send the copter commands to an app, and have the app take care of being able to send the commands to the quad copter. Some of the apps that exist today include Quadroid for Android and Astrodrone for Android/iOS. \\
-MIT has been created a wearable device called NailO, which allows you to control other devices from your nail bed. The device works by sticking it to a nail (usually thumb) like you would a nail sticker and to use another finger on that hand to drag on that surface. We are using similar principles in our design to obtain two NailO like pads on the two faces of the triangular design. \\
+\hspace{1cm}We propose an original wearable device that is capable of steering and controlling a quadcopter. It would be very convenient to be able to direct a droid with a wristband-like device, with vertical and horizontal directing controls. This device would simplify control functionality and be a great alternative to large handheld controllers.\\
+\hspace{1cm}Our design utilizes an obtuse isosceles triangular shape that allows you to control with your thumb and index fingers, representing the X-Y plane, and Z dimension. Where the bottom face represents X-Y plane and the top face acts in the Z (upward and downward) dimension. You can essentially use two wide sides of a triangle with the obtuse angle on top to control different directions at the same time while the third face is attached to the wristband. Prototype design is focused on later on in the report.\\
+\hspace{1cm}We plan to keep all of the essential power and microcontroller housed inside of the pyramid-like structure. The main components of our device include two batteries, a microcontroller, and sensors.\\
+\hspace{1cm}Our idea is to send the copter commands to an app, and have the app take care of being able to send the commands to the quadcopter. Some of the apps that exist today include Quadroid for Android and Astrodrone for Android/iOS. \\
+\hspace{1cm}Students at MIT have created a wearable device called NailO, which allows you to control other devices from your nail bed. The device works by sticking it to a nail (usually thumb) like you would a nail sticker and to use another finger on that hand to drag on that surface. We are using similar principles in our design to obtain two NailO like pads on the two faces of the triangular design. \\
 
 \subsection*{Assumptions}
 \begin{itemize}
@@ -77,7 +80,30 @@ MIT has been created a wearable device called NailO, which allows you to control
 \item I want to...
 \end{itemize}
 
+\subsection*{Prototype}
+\hspace{1cm}Granted, the design we propose may look simple, however it did not come about this way without purpose or thought. The general design idea was primarily dependent on the items we wanted to place the device. Clearly, having a huge processor and the biggest batteries and sensors was not going to help with having a sleek wearable design.\\
+\hspace{1cm}We were initially looking into having a little processor like the new Intel Curie or something from the AMD Cortex M series, but remembered from ECE 375 that we don't always need a processor. More often than not a microcontroller will and can do our bidding, and a processor will only hike the device price. Thus, we went on to look for microcontroller that would suffice our needs. We found the "Adafruit GEMMA v2" microcontroller that was circular in shape, and we decided to model the design around that.\\
+We then continued to look for track pads and batteries that would go along with the microcontroller that we had chosen. Very soon, we found out about NailO, an MIT research project, which was on a similar path to the one we were following. We realized that we could use the touch sensors that they were using for our device. Once again on the Adafruit website we found a battery that could be used. Once we had what we thought we might need, we decided to approach one of our Mechanical Engineering friends, Caleb Schmidt, to discuss whether building a device like this would even be possible and mock up a design on Solidworks for us.\\
+Talking to Caleb was really useful for us because he gave us a general sense of the thickness of our device, if we were to place all the materials we had gathered in there. After much debate, he helped us come with a design that could potentially work, if we could change a couple of different materials inside. We ended up finding "Bluetooth LE (BLE) Beetle Wearable Microcontroller." We thought this would a better option because the shape was more of a rectangle, Bluetooth was included, and it was wireless programming capable. The drawback was that it needed 5V power, but we were only able to supply 3.7V. We decided to look into Samsung's new wearable batteries. More specifically they had thin curved battery cells that we wanted to use. Originally, the idea was to place them in the wrist strap and save space on top. Instead, a better was to elevate the middle of the device into a peak, and place the batteries under the track pad sensors. While we had thought about being able to pop the top of the device off to connect the microcontroller and program it, with the new microcontroller we could wirelessly program it.\\
+Once we settled on a design that we thought would work, Caleb modeled it for us. Refer to Figure 1 to get an idea of what it looks like.
 
+\begin{figure}
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{CaptureV1.png}
+		%\caption{A subfigure}
+		\label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{CaptureV4.png}
+		%\caption{A subfigure}
+		\label{fig:sub2}
+	\end{subfigure}
+	\caption{A figure with two subfigures}
+	\label{fig:test}
+\end{figure}
 
 \section*{Specifications}
 \subsection*{Pros and Cons}
