@@ -1,5 +1,8 @@
 \begin{thebibliography}{KDPS15}
 
+\bibitem[BLE]{BLE}
+Bluetooth le (ble) beetle wearable microcontroller.
+
 \bibitem[KDPS15]{Kao:2015:NFI:2702123.2702572}
 Hsin-Liu~(Cindy) Kao, Artem Dementyev, Joseph~A. Paradiso, and Chris Schmandt.
 \newblock Nailo: Fingernails as an input surface.
@@ -7,7 +10,7 @@ Hsin-Liu~(Cindy) Kao, Artem Dementyev, Joseph~A. Paradiso, and Chris Schmandt.
   Factors in Computing Systems}, CHI '15, pages 3015--3018, New York, NY, USA,
   2015. ACM.
 
-\bibitem[qua]{quadroid}
+\bibitem[Qua]{Quadroid}
 Quadroid.
 
 \end{thebibliography}
